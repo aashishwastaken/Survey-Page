@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Fork Me! FCC: Test Suite Template</title>
+  
+  
+  
+      <link rel="stylesheet" href="./dist/style.css">
+
+  
+</head>
+
+<body>
+
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<h1 id="title"><b>Survey Form</b></h1>
+<div id="outer-form">
+  <p id="description"><u><cite>Feedback for Planet Earth</cite></u></p>
+  
+  <form id="survey-form" method="get"
+        action="https://saveearth.com">
+    
+    <div class="rowTab">
+      <div class="labels">
+   <label id="name-label" for="name">*Name:</label> 
+          </div>
+      <div class="rightTab">
+    <input autofocus class="inputs" type="text" name="name" id="name" placeholder="Enter your name" required></div>  </div>
+   
+        <div class="rowTab">
+      <div class="labels">
+    <label id="email-label" for="email">*Email:</label> 
+          </div>
+      <div class="rightTab">
+     <input class="inputs" type="email"  name="email" id="email" placeholder="Enter your Email-ID" required></div>  </div>
+    
+        
+     <div class="rowTab">
+      <div class="labels">
+        <label id="number-label" for="age">Age:</label> 
+          </div>
+      <div class="rightTab">
+     <input class="inputs" type="number" min="1" max="125"  name="age" id="number" placeholder="Enter your age">
+    </div>  </div>
+        
+    <div class="rowTab">
+      <div class="labels">
+        <label id="continent-label" for="continent">Which continent do you belong to:</label> 
+          </div>
+      <div class="rightTab">
+   <select id="dropdown" name="continent" class="dropdown">
+     <option disabled value>Select a continent</option>
+     <option  value="Africa">Africa</option>
+     <option  value="Antarctica">Antarctica</option>
+      <option  value="Asia">Asia</option>
+     <option  value="Australia">Australia</option>
+     <option  value="Europe">Europe</option>
+     <option  value="North America">North America</option>
+     <option  value="South America">South America</option>
+    </select></div>  </div>
+    
+  <div class="rowTab">
+      <div class="labels">
+        <label id="likes-label" for="likes">What do you like most about this planet:</label>
+          </div>
+      <div class="rightTab">
+    <ul id="likes"  style="list-style-type: none;">
+      <li class="checkbox"><label><input type="checkbox" class="likes" value="Rain">Rain</label></li>
+      <li class="checkbox"><label><input type="checkbox" class="likes" value="Rain">Natives</label></li>
+      <li class="checkbox"><label><input type="checkbox" class="likes" value="Rain">Terrain</label></li>
+      <li class="checkbox"><label><input type="checkbox" class="likes" value="Rain">Sky View</label></li>
+</ul>
+    </div>  </div>
+    
+    
+    <div class="rowTab">
+      <div class="labels">
+        <label id="transport-label" for="transport">What is your favorite mode of transport on this planet:</label>
+          </div>
+      <div class="rightTab">
+    <ul id="transport"  style="list-style-type: none;">
+      <li class="radio"><label><input type="radio" name="rd" class="transport" value="Air">Air</label></li>
+      <li class="radio"><label><input type="radio" name="rd"  class="transport" value="Water">Water</label></li>
+      <li class="radio"><label><input type="radio" name="rd" class="transport" value="Road">Road</label></li>
+      <li class="radio"><label><input type="radio" name="rd" class="transport" value="Rails">Rails</label></li>
+</ul>
+    </div>  </div>
+     
+      
+     <div class="rowTab">
+      <div class="labels">
+   <label id="comment-label" for="comment">Comments about this planet:</label> 
+          </div>
+      <div class="rightTab">
+    <textarea class="inputs" style="height:50px; resize:vertical;" name="comment" id="comment" placeholder="Write your comments"></textarea></div></div>
+    
+    <button id="submit" type="submit">Submit</button>
+    
+  </form>
+  
+</div>
+  
+  
+
+</body>
+
+</html>
